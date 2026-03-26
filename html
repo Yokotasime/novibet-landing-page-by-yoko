@@ -1,0 +1,343 @@
+<!-- My Brazil one page website -->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+  <title>Novibet Brasil Links</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Open Sans', sans-serif;
+      background: #202735;
+      color: #ffffff;
+      text-align: center;
+      min-height: 100vh;
+    }
+
+    .page {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 48px 20px 36px;
+    }
+
+    .logo {
+      width: 200px;
+      height: 200px;
+      object-fit: contain;
+      display: block;
+      margin: 0 auto 24px;
+      border-radius: 36px;
+    }
+
+    h1 {
+      margin: 0 0 14px;
+      font-size: 56px;
+      line-height: 1.05;
+      font-weight: 700;
+      color: #ffffff;
+    }
+
+    .intro-text {
+      font-size: 18px;
+      line-height: 1.55;
+      margin: 0 auto 28px;
+      max-width: 640px;
+      color: #ffffff;
+    }
+
+    .intro-text a {
+      color: #1da1f2;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .intro-text a:hover {
+      color: #0d8ae5;
+    }
+
+    .video-wrap {
+      max-width: 700px;
+      margin: 0 auto 34px;
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: 0 10px 28px rgba(0,0,0,0.28);
+    }
+
+    .video-ratio {
+      position: relative;
+      width: 100%;
+      padding-top: 56.25%;
+      background: #000;
+    }
+
+    .video-ratio iframe {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
+
+    .links {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+      margin: 0 auto 34px;
+      max-width: 640px;
+    }
+
+    .link-pill {
+      display: block;
+      text-decoration: none;
+      color: #ffffff;
+      background: linear-gradient(180deg, #223252 0%, #1b2943 100%);
+      border-radius: 999px;
+      padding: 18px 24px;
+      font-size: 20px;
+      font-weight: 600;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .link-pill:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 10px 24px rgba(0,0,0,0.35);
+    }
+
+    .pill-with-icon {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+    }
+
+    .pill-icon {
+      width: 38px;
+      height: 38px;
+      object-fit: cover;
+      border-radius: 8px;
+      flex-shrink: 0;
+    }
+
+    .social-icons {
+      display: flex;
+      justify-content: center;
+      gap: 28px;
+      flex-wrap: wrap;
+      margin: 0 0 34px;
+    }
+
+    .social-icons a {
+      display: inline-block;
+      padding: 8px;
+    }
+
+    .social-icons a:hover {
+      transform: scale(1.12);
+    }
+
+    .social-icons img {
+      width: 52px;
+      height: 52px;
+      filter: brightness(0) invert(1);
+      transition: transform 0.2s ease;
+    }
+
+    .footer-note {
+      max-width: 720px;
+      margin: 0 auto;
+      font-size: 13px;
+      line-height: 1.55;
+      color: #8f96a3;
+      font-style: italic;
+    }
+
+    @media (max-width: 767px) {
+      .page {
+        padding: 20px 16px 32px;
+        position: relative;
+        overflow: hidden;
+      }
+
+      .page::before {
+        content: "";
+        position: absolute;
+        top: 10px;
+        left: 12px;
+        right: 12px;
+        height: 45%;
+        border-radius: 28px;
+        background: linear-gradient(
+          180deg,
+          rgba(61,92,148,.45) 0%,
+          rgba(34,50,82,.30) 55%,
+          rgba(27,41,67,.10) 100%
+        );
+        box-shadow: 0 18px 40px rgba(0,0,0,.28);
+        z-index: 0;
+      }
+
+      .page > * {
+        position: relative;
+        z-index: 1;
+      }
+
+      .logo {
+        width: 130px;
+        height: 130px;
+        border-radius: 24px;
+      }
+
+      h1 {
+        font-size: 36px;
+      }
+
+      .intro-text {
+        font-size: 15px;
+        padding: 0 10px;
+      }
+
+      .link-pill {
+        font-size: 16px;
+        padding: 16px 18px;
+        border-radius: 22px;
+      }
+
+      .pill-icon {
+        width: 32px;
+        height: 32px;
+      }
+
+      .social-icons {
+        gap: 8px;
+        flex-wrap: nowrap;
+        justify-content: center;
+        padding: 0 12px;  
+      }
+        
+      .social-icons a {
+        padding: 4px;  
+      }
+
+      .social-icons img {
+        width: 34px;
+        height: 34px;
+      }
+
+      .footer-note {
+        font-size: 11px;
+        padding: 0 10px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <main class="page">
+
+    <img
+      class="logo"
+      src="https://ugc.production.linktr.ee/11f703e8-7536-4e61-8910-7c1d4e48992e_335210533-1347081579410387-8439444526583307254-n.jpeg"
+      alt="Novibet Brasil logo"
+    />
+
+    <h1>Novibet Brasil</h1>
+
+    <div class="intro-text">
+      ⚽ Apostas esportivas 🎰 Cassino ao vivo<br>
+      Patrocinador Oficial do
+      <a href="https://www.instagram.com/santosfc/" target="_blank" rel="noopener noreferrer">@santosfc</a><br>
+      🔞 +18 | Aposte com Responsabilidade<br>
+      ⚖️ Licença nº249/2025
+    </div>
+
+    <div class="video-wrap">
+      <div class="video-ratio">
+        <iframe
+          src="https://www.youtube.com/embed/lvTd1iGqf4w?rel=0&controls=1&autoplay=1&mute=1&loop=1&playlist=lvTd1iGqf4w"
+          allow="autoplay; encrypted-media"
+          allowfullscreen
+          title="Novibet Brasil Video">
+        </iframe>
+      </div>
+    </div>
+
+    <div class="links">
+      <a class="link-pill"
+         href="https://www.novibet.bet.br/apostas-esportivas"
+         target="_blank"
+         rel="noopener noreferrer">
+        🌐 Site Oficial | BORAAAA 👆
+      </a>
+
+      <a class="link-pill pill-with-icon"
+         href="https://www.instagram.com/jogoaberto/"
+         target="_blank"
+         rel="noopener noreferrer">
+        <img
+          class="pill-icon"
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBJpl7sEtIssF33w1A9WjBMJG71VzMhTBTBtoDITYu_XZuHFMYkw9z&usqp=CAE&s"
+          alt="Jogo Aberto logo"
+        >
+        <span>Jogo Aberto Novibet</span>
+      </a>
+
+      <a class="link-pill pill-with-icon"
+         href="https://www.instagram.com/santosfc/"
+         target="_blank"
+         rel="noopener noreferrer">
+        <img
+          class="pill-icon"
+          src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAD3pJREFUeNrtWwlQFGcW7u7puWcACYJgUFGJGgLeEg1i8EjK+yYeiQkK8YpHKmtcz2hkXY9oaVTWK16leCQqGo9oaTxZI4F4xuh6EhVQFJS5j+7e7++aoQAHGXAAze5f1fRM0/33e+9/73vfe91DUZ4bNaiqGx67F+OpiT7sLpvqq6Rerwrte8VIV7xsBmA+7st+MHywfEBlK18/mGqVOF4WW9OLauiJ+dgXuTa6JTNhUDfp6zaO9o+MYIJVSmpCaB1lg4f5vGnuastuk4k64yG9g0b0l41v9ZZE6V+DahXWkJEsmaZYXWCkL51Kt+mT99sX45zHVe0B9oyr/Ba1ko4YFSsdgj31doSkXsdIJj4nh7/tQeXJyMrO5Q9EvEEP6NOJbUcOwPAxjerSPe4/pFMqqjwZkheRymaj9ClH7cntW7Dj6gczSnJs/lrrnCWbbYs87frXM/nMAydt58YMkn8shd/m5glC+6GGztcy+YxqxYCgmlR4g2DaO2m7bduJdO5OZFNJdGXF/4QPZdGZWZx+0Sbr2gKDYBkRK4+iqnu0bcaMje0q6SPmphqUd78ukrX46F0Z9+oRI0lqUp8KJZ8j35JFdGvPLqpW5VmW7SiXyxt5OrTcDVmZTNYYMnTy2ITlVL6zn59filKpHGmxWN7A91scxz1w/FuoJAMIDsXDsZuHbSW2wQzDnOV5/laVGUAqlbbx9vbec/z4cVliYiIbFBTU6MaNGwn5+fm9JRKJCsLk4LSnHla+Du77EZRdKgjCP2iabu7AMJLK++K+x3Dfe+WdlC7vBbB+GNz+6JEjRzRt2rRRF12djIwMQ3JyMr137176zp07dyHoSQicjv1lu91+E+c8dNM7/OFRDaBkBJRqiX00jFw7NzdXYbPZSuMuebhXB6vVernSDKBQKEKwOw4Ffbt06aIp1Bzjjz/+MDx69Ejt7++vb9SokSYrK8uYmpoq/Prrr/TFixcl8BDL/fv3ZTBEDhR6gsv02KwOLySbGtP4QnG/wMBArkGDBvLw8HB7q1atqICAANPXX3+tPnPmjEoUmqbJLV3JnoXro8xm8+3KMEAtuODJLVu2BA4cOFDjVDwpKUkHBS0wjrKgoMDStm1bxdatW62xsbHsqFGjNBCWLmIou8lkMjx+/Jh++vSpFKvFOLyK9/Hxsfn6+grAFDUuEVcZq29fuHChGcorcC7buHFj08aNG3kYgps4caKXS5AQhJvAIpIeczxpAB9Y9viKFStCPv30U/HGuAk/YsSIJwkJCbJ33nlHNMiMGTPy4uPjlZcvX+b3799vggISGMgbrlluvgGjGj/55BPq0qVLKsQ39+WXX5pmzpypgBzshg0bdLiv9nmXw9PexT7fE0RIhXvuwyrUdSpPxrx583RYSaNTeTKmT5+uXbRokbFbt24K4ARFjIMV1JVHcay0berUqXrgi4IoHxYWZkpLS7Pg/hqivMgKr1/ny5gmgshMwupFiyEaE20fOnRo+JQpUwqVB9pb8vLyeMSoBqtswwJLyXEoLQ0NDZVlZmaS2OZatmypRjjk63Q6i1arlZclDDDDMHz4cMmtW7eIshw8Sj9t2jQFPIAFhhiQeVgsgm3fvn3uEK12RHZ4Qo8XMQAJ87Vw5w4AOXOTJk0U5OBPP/1k69evnxxAR5Df3Lp1a6nzgj59+tB79uwRYBRyrh1gKTt69Kgdx0s1gF6vt8HFzWvXrtUQcKtZs6b10KFDdmJgAgWLFy/WwRAqtVrNAzs0Ja+Hl+h///33ksctmGv1C4cAYn0PVjyuV69eFADMRo5hhaVAeiuOSdetW2cven5wcLDq9u3bZlxnIQY+fPgwhZTIlTY/jKl78803+TVr1midyD5hwgQblBcRH8obJ0+erMVKSghwAoB1X3311SPHvSwHDhzQ4xzWxcoNgwx7PVIMYaKdUHrPkiVLzCIoqFRWpDwZXF7WtWtX6fz58wnYOOOSQTYwwQPY8+fPG65du2aE+z+T+4EfliFDhuh69uypzc7OLuYdSHuFBkPup53KgnvowTO0tWvXFs//7rvvKJKOiZsWi1ua3gGZd3i6IbJw5cqVvYAFQocOHSRxcXHU0qVL9fACjZeXlwEZIQ+hoNBoNGbEvBqCC99//731vffek0ZFRcmKLg5wQY9VVsCztGVSVYlEXCTMY8J9fZw8wKnrqVOnDCNHjizJaL/xeEcIDCwDMa/DZm/atKkWROUB0p1827ZtuQAbnoAc0tNTsiLgBBzwggMPkALRufHjx4u9AlxrRmbgEBZaeIgwbtw4HZRhvv32W/Vzag7pM5QvL0/mSLvWs2fPagCO5iL/zoWs6ZXVD7iJFCQqM3v2bO8TJ04I7dq1k3Xs2FEVEhLCNmzYUP7++++bIyIiNL179yb8gEFqJMrx8B49Yl0C5dXAD9Pp06dNiF0tPEb6vBuCGBE3N8yaNUvhiG1ux44dYriBZargSTriBUUuuVWeYqy8PcFCwIMHKBAO1ODBg21wcf7zzz/nIMxrq1atMgDVdeADFLKHmhCm9u3bm3/55RcxtQHN9TCKSGhAWW2//fYb5wLACj9/8cUXHECQACJNcANp0I7Mo4YxTevXrxdatGihBcgWuJKxMgwQUK9ePeJuYsoBNVWkp6fLfvzxRyMUZoDUWXB/L6yYHMaR4Zh1zpw5Io1t3ry5ESFCQXANVs6INGfGdxbgqiyj7CaAJ2zatEkHYyiMRqMc3qeHUUR+4MJ4tSvLAFooBzAOZkuCFHK8Bpt4Dvlz4cIFI5gcB4zQIFPYkSX08BAl4l0CD3iCbKJGKiN5mqRKxfNuipRqAsAKcHNx7ujoaAG4oimVudF0HewIaSvwqAGgKEC4AwfwKnXFLBaLDYqZiYJwfcbPz8+MwkWA1xQKjBBhkcutID4aEJ8nhWDEMDywQ4/U6YW0KMH19gULFpgTExNFDypPnxOydsT1KR41AAQcOGDAgFJBE6Am0lisWGFqQ2lsAatTOTiCeO3y5ctJpViMyiKrGElOv3LlCj9s2DCKhA0ygxUxr6lQp5dhYt01gLtZ4DXQ0N6DBg2SuKKxo0ePLiCZAMoXc2fU/wogPkG0QqDDHL6k4CkKdrt377bBCCoILZIewvqwsf3798+rUN9MEPoS+3vMAwBE44C+EmBAMcYGGqoDCZHn5OS4rM1BXeXYRBrhPAYMyH/w4AEhbzagdyGx2bJliw41vkh/UWfoUHrL4FXMzp07K2IDkmXGw4jTPWEAP1DfsZMmTZIWpbEgMVYwPW0ZHZpnxubNmxkQomIhQAAUwKmtVauWdePGjbru3bs7w8j0Io8RSMSV1Rhh3QC/RACWAoAmd9JYMDvFkydPtITQANQ4pDiZr68vAa4ym6wgSkZweSvArabzGJT3AbrrU1JS5GCUWsozQwPZ50CmhAobQCqVRtatW/cjsvqIZ1N8fDyPgkRLUhuASo/jJBcrHeda3DHA6tWrA1FBPtMxhhEJnZZ6qoUMBmnBog29e/fuBoRCakUMwMKtscCr7EhXPIiNHCRE2rlzZwOOMXXq1ClE6H379unAv9Wl5GWhCDhxQHcTOLyqsh/ayGQyOzKLgCLqX/jaojSGyD5n9UfCxevNnDmTRcGhIk0KUE8dAEoDDLCCnOh69OjBETYHMHTptsgcloMHD5Ibq0mPD2mSuLuGFEJV8eQqJiZGA84R8sMPP4zGAi0rjwEUWK3pV69e9Xa4kxWcnQdIaaG8OTw8nEa5qwWNNYCeSlDTG5AK1U5CM3bsWAOoK4MqzdasWTM1QkVHKj6EiwCipAd+cCilvavCCGChEqTZSTAA6Q5Z3DIABP2AtMGd34OCgoxQXkxZSGGE1LAkbYHQaJydZSjNgfFZUR4LiGct9gUoW5Wk23Pv3j1t69atjfAgijwzQDgZqCoaoO5K8AlfVJCDYYQNbhkAcftRiY5Q4WfU+XIQHjtWUYoJOYQK61h5AS5ngfI+JE2i0pOCJMlJ0xTUWD9mzBixFqCqYYDDCNu3bx+KjxvcYYLElaNLMwAQlZ87d64Nqy1FPPMlwQ7EhfT4GJ1OJ2YHuL4B3qGpLuXJQDlOOlWRrtrkrAvWRxBTWoLuygiCp6ammkaNGkVfu3bNmQE4R7fIAsPIEBYqIK+sBJhS1T3IkyaEIHvs2LHmkPP0cz0AJ4eWPJafn68KDAwkj6UEEBhSbfGox/UAOIZUbaCwdsIE4fYy6iUdYWFhNle6uWoo+D3TCNBqLUBSum3bthqAoDUtLU1seyEzmEhzFFWcOiAgwEqeBv35558vpRFq1KihdqWbKxB8JlbBqExQ3sfRspZ5eXkxSH8GlLbkXQCacIKFCxcqUOkRA7yUHuB4Pikp0wBwk4ISbfZiPbqff/7ZkJCQwEJRdUhIiBm0louKinISIdvLGgIGg8FEdCvTAFjRu0WeaFOO3K86efIkaULaUc1pHXlft2DBAgUop4J6BQZSN6lYb5VpAIDaBcdD2MJhMplknToVfxfps88+o6G8lHpFxrlz53hkgMvu8IBMWOoO9Rca2dnZxps3b+bi4z23WmIIgZS/kgFQDHGl6cSUgpjrHdWcDUxO7+Pjo3+F9eeTkpJYGGCT2wawWq0XsTuMSsqEKq/KytfKGCiCTDdu3DgJtnqhXF1hWGwyWJ+0oKDA+qoqT2QHX2Ggy99L5Qel/QMWO5+Tk/PNkCFDbEBP5pXzexA0yG4lOhBdym0AR+U3+9ChQ4dhSfWrZgBUoyrIfoTo8FyGWMY8HCYYBBfa+qoZADJvg+wfUEUeypSrJ1gUE+FCQ1HWpoIf/JNyPAB9iYceyk+BzOSHVWWCt7vPBgXHhDvBEgmgDCfgghgzxsTE8P7+/ppqUFR4+PChAbUJnZycTDyZvI+4HqtO3iLPdneS8r4fkIMbTMR++v79+3sePHiwK8CmHUpNOjQ0lLzfV+nU+NKlS+StFMv169e5/Pz8HKTof0OGg443wozlna+ivxrT44ZbyUa+PHr0SAGgrA9BXkeYBMAF65HmAz6/PWXKlOD09HRDXFyc4Hjvr8xx8eJFPapMeteuXeRp1FXMRd44v4otkyidkZGRBa6SSYq8ou26igzWQwtjhkBXsL9S8h8om4OXL1/ef9myZXGRkZH1Z82aJWKUq0ngzvoZM2ZQaWlpN6D0OoTdLhy+X6lgWZXATH5lgv1clUoVYTQai3WOyLuHOEby9TSE2ZEqE6o6mjPIKPFwZ/KDJ2dIkNfl/oYVX0NV3s9tXhoDiEMul4c63+KQSCR9LRbLf6j/weFNVdJP7P4/3Bz/BS4rvd6nEqujAAAAAElFTkSuQmCC"
+          alt="Santos logo"
+        >
+        <span>Santos Futebol Clube</span>
+      </a>
+    </div>
+
+    <div class="social-icons">
+
+      <a href="https://www.instagram.com/novibet_brasil" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+        <img src="https://cdn.prod.website-files.com/6949513b4348a8d603e895b4/694a6a276f0e68ec7ebfa79c_instagram.svg" alt="Instagram">
+      </a>
+
+      <a href="https://www.youtube.com/@novibetbrasil" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
+        <img src="https://cdn.prod.website-files.com/6949513b4348a8d603e895b4/694ffc81419b75bf755f2c71_youtube.svg" alt="YouTube">
+      </a>
+
+      <a href="https://x.com/NovibetBr" target="_blank" rel="noopener noreferrer" aria-label="X">
+        <img src="https://cdn.prod.website-files.com/6949513b4348a8d603e895b4/694ffc812b34deb3ac645751_x.svg" alt="X">
+      </a>
+
+      <a href="https://www.facebook.com/novibet.br" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+        <img src="https://cdn.prod.website-files.com/6949513b4348a8d603e895b4/694ffc816c3b23a72f6afe80_facebook.svg" alt="Facebook">
+      </a>
+
+      <a href="https://www.novibet.bet.br/" target="_blank" rel="noopener noreferrer" aria-label="Website">
+        <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/googlechrome.svg" alt="Website">
+      </a>
+
+      <a href="https://www.whatsapp.com/channel/0029Vb6GV4OKWEKifaZbrl1Q" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+        <img src="https://cdn.prod.website-files.com/6949513b4348a8d603e895b4/694ffc8153ea2b4398fff4dc_whatsapp.svg" alt="WhatsApp">
+      </a>
+
+      <a href="https://www.tiktok.com/@novibet.br0" target="_blank" rel="noopener noreferrer" aria-label="TikTok">
+        <img src="https://cdn.prod.website-files.com/6949513b4348a8d603e895b4/694ffc72f204a92127bcb56c_tiktok.svg" alt="TikTok">
+      </a>
+
+    </div>
+
+    <div class="footer-note">
+      🔞 Licença Nº 249/2025 SPA/MF | Jogue com responsabilidade
+    </div>
+
+  </main>
+</body>
+</html>
